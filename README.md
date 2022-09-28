@@ -1,5 +1,5 @@
 # `nohcaptcha`
-`nohcaptcha` is a **private** python-based [hcaptcha](https://hcaptcha.com) bypass.
+`nohcaptcha` is a **private** python-based [hcaptcha](https://hcaptcha.com) bypass.\n
 ``50 stars`` = **release**
 
 ## information

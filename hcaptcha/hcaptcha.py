@@ -46,19 +46,19 @@ def analyze(text):
     animal = None
     for antiobject in antiobjectData:
         if antiobject in text.replace("_", ""):
-            print(f'guessing no for {text} (anti object)'); return 'no'
+            return 'no'
     for word in text.split("_"):
         if len(word) >= 4 and str(word) in objectData:
             animal = str(word)
     if animal:
         if text.split("_").count(str(animal)) > 1:
-            print(f'guessing yes for {text} (animal >1)');return 'yes'
+            return 'yes'
         for word in text.replace(f'_{animal}', "").replace("?", "").split("_"):
             if any(n in word for n in objectData[animal]): 
-                print(f'guessing yes for {text} (crtiteria matched)');return 'yes'
-        print(f'guessing no for {text} (criteria not matched)');return 'no'
+                return 'yes'
+        return 'no'
     else:
-        print(f'animal was not found in {text}, guessing no');return 'no'
+        return 'no'
 
 base_header = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.5195.102 Safari/537.36',

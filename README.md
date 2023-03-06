@@ -1,5 +1,5 @@
-# `nohcaptcha`
-`nohcaptcha` is a **public** python-based [hcaptcha](https://hcaptcha.com) bypass/solver hybrid. the module first attempts to bypass hcaptcha text captchas with a list of stored answers. if the question is not saved, the module attempts to find similarities to generate an educated guess based on re-occuring stored data (**90%+ solve rate)**.
+# `nohcaptcha` - still working
+`nohcaptcha` is a **public** python-based [hcaptcha](https://hcaptcha.com) bypass/solver hybrid. the module first attempts to bypass hcaptcha text captchas with a list of stored answers. if the question is not saved, the module attempts to find similarities to generate an educated guess based on re-occuring stored data (**90%+ solve rate)**. 
 
 ## usage
 ```py
